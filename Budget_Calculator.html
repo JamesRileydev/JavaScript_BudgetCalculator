@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+  <script src="items.js"></script>
+  <script src="category.js"></script>
+  <script src="budget.js"></script>
+  <script src="main-setup.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>budget buddy</h1>
+  </header>
+
+  <div class="modal" id="budget-modal">
+    <label id="budget-label">
+      <h2>Budget:</h2>
+      <input type="text" id="budget-input">
+      <button id="budget-button">Add Budget</button>
+    </label>
+    <br/>
+    <br/>
+  </div>
+  </div>
+
+  <div class="main">
+    <h2>
+      <div id="budget-counter">Total Budget:</div>
+    </h2>
+    <h4>
+      <div id="total-spent-counter"></div>
+    </h4>
+    <div id="budget-slider">
+      <div id="entertainment-slider"></div>
+      <div id="food-slider"></div>
+      <div id="clothing-slider"></div>
+      <div id="bills-slider"></div>
+    </div>
+    <div class="add-item-container">
+      <h3>Add Spend Money</h3>
+      <input type="text" id="item-description" placeholder="Item Description"></input>
+      <input type="text" id="item-price" placeholder="$ Price" </input>
+      <div class="dropdown">
+        <select id="category-dropdown">
+          <option value="clothing">Clothing</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="bills">Bills</option>
+          <option value="food">Food</option>
+        </select>
+      </div>
+      <!-- TEMP -->
+      <button id="item-button" onclick="addItems()">Add Item</button>
+    </div>
+
+
+    <div class id="categories-container">
+      <h3>Categories</h3>
+      <div id="clothing">
+        <h4>Clothing</h4>
+      </div>
+      <div id="entertainment">
+        <h4>Entertainment</h4>
+      </div>
+      <div id="bills">
+        <h4>Bills</h4>
+      </div>
+      <div id="food">
+        <h4>Food</h4>
+      </div>
+    </div>
+
+    <div id="stop-spending">
+      <p> You have met or exceeded your budget </p>
+      <button id="cancel">OK</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
